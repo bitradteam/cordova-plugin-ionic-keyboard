@@ -81,6 +81,18 @@ Call this method to show the keyboard.
 Keyboard.show();
 ```
 
+### Keyboard.setResizeMode (for iOS only)  
+> Programmatically set the resize mode
+
+  Call the method with parameter to set the resize mode.  
+
+```js 
+// Possible values are the same as for 'KeyboardResizeMode' preference 
+Keyboard.setResizeMode('native'); 
+Keyboard.setResizeMode('body'); 
+Keyboard.setResizeMode('ionic'); 
+```
+
 ## Properties
 
 ### Keyboard.isVisible
@@ -137,7 +149,7 @@ window.addEventListener('keyboardWillShow', (event) => {
 
 ### keyboardWillHide
 
-> This event is fired when the keyboard is fully closed.
+> This event fires before keyboard will be closed.
 
 Attach handler to this event to be able to receive notification when keyboard is about to be closed.
 
